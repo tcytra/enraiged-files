@@ -1,0 +1,40 @@
+{
+    "name": "tcytra/enraiged-files",
+    "description": "Enraiged Files provides file attachable services for Enraiged Laravel models.",
+    "keywords": ["files", "enraiged"],
+    "homepage": "https://github.com/tcytra/enraiged-files",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Todd Cytra",
+            "email": "tcytra@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^3.11",
+        "laravel/framework": "^12.0",
+        "spatie/laravel-image-optimizer": "^1.8",
+        "tcytra/enraiged-core": "^0.4",
+        "tcytra/enraiged-support": "^0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Enraiged\\Files\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=enraiged-files --ansi --force"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Enraiged\\Files\\FilesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
