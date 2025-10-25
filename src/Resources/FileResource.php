@@ -6,6 +6,9 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class FileResource extends JsonResource
 {
+    /** @var  string|null  The "data" wrapper that should be applied.*/
+    public static $wrap;
+
     /**
      *  Transform the resource collection into an array.
      *

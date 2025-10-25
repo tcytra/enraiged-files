@@ -24,4 +24,8 @@ interface AttachableContract
      *  @return string
      */
     public function url(): string;
+    // template:
+    // {
+    //     return route('route.name', ['model' => $this->id], config('enraiged.app.absolute_uris'));
+    // }
 }

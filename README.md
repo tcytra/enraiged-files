@@ -17,6 +17,12 @@ Publish the Enraiged Files assets to the local project:
 php artisan vendor:publish --tag=enraiged-files --ansi --force
 ```
 
+Run the migration:
+
+```bash
+php artisan migrate
+```
+
 
 ## License
 

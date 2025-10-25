@@ -142,14 +142,4 @@ trait Attachable
             ->optimize()
             ->resize();
     }
-
-    /**
-     *  Return the universal resource location for the attachable file.
-     *
-     *  @return string
-     */
-    public function url(): string
-    {
-        return route('avatars.show', ['avatar' => $this->id], true);
-    }
 }
