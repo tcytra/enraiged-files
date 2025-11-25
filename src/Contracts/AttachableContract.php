@@ -17,15 +17,4 @@ interface AttachableContract
      *  @return string
      */
     public function path(): string;
-
-    /**
-     *  Return the universal resource location for the attachable file.
-     *
-     *  @return string
-     */
-    public function url(): string;
-    // template:
-    // {
-    //     return route('route.name', ['model' => $this->id], config('enraiged.app.absolute_uris'));
-    // }
 }
