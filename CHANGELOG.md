@@ -3,7 +3,9 @@
 2025-11-26 : 0.4.0-beta.3 (prerelease)  
 Update: Testing/corrections in the enraiged-files system
 
+- Added path method to return the full file/folder path
 - Corrected handling of the directory in the attachable trait
+- Corrected handling of the storage attribute
 - Removed url method from AttachableContract interface
 
 ---

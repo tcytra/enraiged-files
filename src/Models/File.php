@@ -99,6 +99,16 @@ class File extends Model
     }
 
     /**
+     *  Return the full storage path of the file.
+     *
+     *  @return string
+     */
+    public function path(): string
+    {
+        return Storage::path($this->path);
+    }
+
+    /**
      *  Store the uploaded file to the configured directory.
      *
      *  @param  \Illuminate\Http\UploadedFile  $file
