@@ -1,7 +1,10 @@
-# Release Notes
+# Enraiged Files Release Notes
 
-2025-11-25 : 0.4.0-beta.3 (prerelease)  
-Update: Removed url method from AttachableContract interface
+2025-11-26 : 0.4.0-beta.3 (prerelease)  
+Update: Testing/corrections in the enraiged-files system
+
+- Corrected handling of the directory in the attachable trait
+- Removed url method from AttachableContract interface
 
 ---
 

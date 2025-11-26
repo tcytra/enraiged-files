@@ -31,7 +31,9 @@ trait Attachable
      */
     public function directory(): string
     {
-        return $this->directory ?: 'files';
+        return property_exists($this, 'directory')
+            ? $this->directory
+            : 'files';
     }
 
     /**
@@ -45,7 +47,7 @@ trait Attachable
     /**
      *  Optimize an image file, if possible.
      *
-     *  @return self
+     *  @return $this
      */
     public function optimize()
     {
@@ -69,7 +71,7 @@ trait Attachable
     /**
      *  Resize an image file to the provided dimensions, if possible.
      *
-     *  @return self
+     *  @return $this
      */
     public function resize(): self
     {
@@ -103,8 +105,8 @@ trait Attachable
     /**
      *  Attach a file from a local seed.
      *
-     *  @param  \Illuminate\Http\File $file
-     *  @return self
+     *  @param  \Illuminate\Http\File  $file
+     *  @return $this
      */
     public function seed(File $file): self
     {
@@ -129,7 +131,7 @@ trait Attachable
      *  Store the uploaded file.
      *
      *  @param  \Illuminate\Http\UploadedFile  $file
-     *  @return \Enraiged\Avatars\Models\Avatar  $avatar
+     *  @return \Enraiged\Files\Contracts\AttachableContract
      */
     public function upload(UploadedFile $file)
     {
