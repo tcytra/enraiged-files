@@ -2,16 +2,10 @@
 
 namespace Enraiged\Files\Models\Attributes;
 
+use Illuminate\Support\Facades\Storage as StorageFacade;
+
 trait Storage
 {
-    /**
-     *  @return void
-     */
-    public function initializeStorage(): void
-    {
-        //$this->append(['path', 'type']);
-    }
-
     /**
      *  Return the storage path for the files.
      *
@@ -19,6 +13,8 @@ trait Storage
      */
     public function getStorageAttribute(): string
     {
-        return storage_path("app/{$this->directory}");
+        $directory = $this->attachable->directory();
+
+        return StorageFacade::path($directory);
     }
 }

@@ -5,14 +5,6 @@ namespace Enraiged\Files\Models\Attributes;
 trait Type
 {
     /**
-     *  @return void
-     */
-    public function initializeType()
-    {
-        $this->append('type');
-    }
-
-    /**
      *  Return the file type.
      *
      *  @return string
