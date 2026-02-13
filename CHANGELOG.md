@@ -1,5 +1,10 @@
 # Enraiged Files Release Notes
 
+2026-02-13 : 0.4.0-beta.4 (prerelease)  
+Bugfix: Corrected issue when uploading a file (avatar)
+
+---
+
 2025-11-26 : 0.4.0-beta.3 (prerelease)  
 Update: Testing/corrections in the enraiged-files system
 

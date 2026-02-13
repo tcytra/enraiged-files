@@ -64,7 +64,7 @@ class File extends Model
      */
     public function delete()
     {
-        if ($this->path) {
+        if ($this->exists) {
             Storage::delete($this->path);
 
             return parent::delete();
