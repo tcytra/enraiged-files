@@ -1,5 +1,10 @@
 # Enraiged Files Release Notes
 
+2026-04-16 : 0.4.0-rc.1  
+Minor: Updated composer to allow laravel/framework v12 or v13
+
+---
+
 2026-02-13 : 0.4.0-beta.4 (prerelease)  
 Bugfix: Corrected issue when uploading a file (avatar)
 
